@@ -1,0 +1,65 @@
+// ОВЕРЛЕЙ-СІРИЙ ФОН ПЕРЕД МОДАЛКОЮ
+
+
+.ovarlay {
+    max-width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-480.jpg);
+    background-color: $color-bgr-footer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi)
+    {background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-480@2x.jpg);
+    }
+    @media (min-device-pixel-ratio:3),
+    (min-resolution: 288dpi) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-480@3x.jpg);
+    }
+}
+
+// Планшетна версія 768px
+@media screen and (min-width: 481px) {
+.ovarlay {
+    max-width: 1199px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-768.jpg);
+    
+    
+    @media (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-768@2x.jpg);
+    }
+    
+    @media (min-device-pixel-ratio:3),
+    (min-resolution: 288dpi) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-768@3x.jpg);
+    }
+}
+}
+
+
+
+
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
+.ovarlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-1600.jpg);
+    
+    
+    @media (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi) {
+       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-1600@2x.jpg);
+    }
+    
+    @media (min-device-pixel-ratio:3),
+    (min-resolution: 288dpi) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-1600@3x.jpg);
+    }
+}
+}

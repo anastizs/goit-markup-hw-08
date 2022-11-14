@@ -1,0 +1,81 @@
+// КОНТАКТИ САЙТУ
+
+
+.contact-nav__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contact-nav__link {
+    display: flex;
+    align-items: center;
+    color: $color-secondary;
+    transition: color 250ms $timing-function;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $color-accent;
+    }
+}
+.contact-nav__icon {
+    display: none;
+    fill: currentColor;
+    margin-right: 10px;
+}
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+
+.contact-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 21px 0;
+}
+.contact-nav__item {
+    font-size: 12px;
+}
+.contact-nav__icon {
+    display: none;
+    fill: currentColor;
+    margin-right: 10px;
+}
+}
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+.contact-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 21px 0;
+}
+.contact-nav__item {
+    font-size: 12px;
+    line-height: 1.17;
+}
+.contact-nav__icon {
+    display: flex;
+    fill: currentColor;
+    margin-right: 10px;
+}
+}
+// Планшетна версія 1200px
+@media screen and (min-width: 1200px) {
+
+.contact-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 32px 0;
+    }
+.contact-nav__item {
+    font-size: 14px;
+    line-height: 1.14;
+    
+}
+
+}

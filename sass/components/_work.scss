@@ -1,0 +1,97 @@
+// ЧИМ МИ ЗАЙМАЄМОСЯ
+
+// Мобільна версія 480px
+
+.work {
+    padding-top: 0;
+}
+
+.work__item {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.work__icons {
+    display: flex;
+    gap: $gap-card-set;
+}
+
+.work__thumb {
+    position: relative;
+    width: 370px;
+}
+
+.work__title {
+    position: absolute;
+    width: 370px;
+    bottom: 0;
+    padding: 27px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-white;
+    background-color: rgba(47, 48, 58, 0.8)
+}
+
+// Планшетна версія 768px
+@media screen and (max-width: 1199px) {
+.work {
+    display: none;
+}
+}
+
+
+
+
+
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
+.work {
+    display: flex;  
+}
+}
+
+// .work {
+//     padding-top: 0;
+// }
+
+// .work__item {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.17;
+//     text-align: center;
+//     margin-bottom: 50px;
+// }
+
+// .work__icons {
+//     display: flex;
+//     gap: $gap-card-set;
+// }
+
+// .work__thumb {
+//     position: relative;
+//     width: 370px;
+// }
+
+// .work__title {
+//     position: absolute;
+//     width: 370px;
+//     bottom: 0;
+//     padding: 27px 0;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: $color-white;
+//     background-color: rgba(47, 48, 58, 0.8)
+// }

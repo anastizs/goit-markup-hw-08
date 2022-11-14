@@ -1,0 +1,251 @@
+// МОДАЛЬНЕ ВІКНО
+
+
+// Мобільна версія 480px
+.backdrop {
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms $timing-function;
+    overflow-y: scroll;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &.is-hidden .modal {
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+}
+
+.modal {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $timing-function;
+    padding: 40px;
+
+    width: 450px;
+
+    border-radius: 4px;
+    box-shadow: $shadow-cart;
+    background-color: $color-white;
+    color: $color-primary;
+}
+
+.modal__close-btn {
+    position: absolute;
+    display: flex;
+    border-radius: 50%;
+    background-color: $color-white;
+    fill: $color-primary;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: $color-accent;
+    }
+}
+
+.modal__close-icon {
+    width: 18px;
+    height: 18px;
+    transition: fill 250ms $timing-function;
+}
+
+
+// ФОРМА
+
+.modal-form__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-primary;
+    margin-bottom: 12px;
+}
+
+.form {
+    width: 370px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    position: relative;
+}
+
+.form-input {
+    fill: currentColor;
+    padding: 11px 12px 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    transition: border 250ms $timing-function;
+
+    &:focus-within~.form-icon {
+        fill: $color-accent;
+    }
+
+    &:focus {
+        border: 1px solid $color-accent;
+    }
+}
+
+
+.form-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transform: translateY(12px);
+    left: 12px;
+}
+
+.form-label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    text-align: start;
+    color: $color-secondary;
+    margin-bottom: 4px;
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.comment {
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+}
+
+.policy {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.policy__label {
+    
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $color-secondary;
+    margin: 0;
+}
+
+.policy__checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+
+    &:checked+.policy__icon {
+        background-color: $color-accent;
+        border-color: $color-accent;
+        background-image: url("../../images/svg/check.svg");
+        object-fit: cover;
+    }
+}
+
+.policy__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-color: $color-white;
+    margin-right: 8px;
+    border: 2px solid $color-primary;
+    border-radius: 4px;
+}
+
+.policy__contract {
+    color: $color-accent;
+    text-decoration-line: underline;
+}
+
+.form__btn {
+    display: flex;
+    padding: 10px 52px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $color-white;
+    background-color: $color-accent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:active {
+        background: #188CE8;
+    }
+}
+
+
+
+
+
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+
+}
+
+
+
+
+
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
+.modal {
+    width: 528px;
+}
+.form {
+    width: 448px;
+}
+.policy__label {
+    font-size: 14px;
+}
+}
+
+

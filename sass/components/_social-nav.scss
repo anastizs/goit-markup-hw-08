@@ -1,0 +1,40 @@
+.social-nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+    margin-bottom: 48px;
+ }
+.social-nav__item{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $color-accent;
+    
+    &:not(:last-child) {
+            padding-right: 10px;
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+    
+        }
+        &:not(:first-child) {
+            padding-left: 10px;
+    
+    
+        }
+}
+
+
+.social-nav__link{
+    display: flex;
+    align-items: center;
+    color: $color-accent;
+    text-decoration: none;
+}
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+    .social-nav {
+        display: none;
+    }
+}

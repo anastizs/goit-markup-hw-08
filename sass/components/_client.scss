@@ -1,0 +1,123 @@
+// ПОСТІЙНІ КЛІЄНТИ
+
+
+
+// Мобільна версія 480px
+.client__item {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.client__links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.client__link {
+    display: flex;
+    padding: 0;
+    border: none;
+    width: 210px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
+    cursor: pointer;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $color-accent;
+        border: 1px solid $color-accent;
+    }
+}
+
+.client__icon {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
+}
+
+
+
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+.client__link {
+    width: 226px;
+}
+}
+
+
+
+
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
+    .client__link {
+        width: 170px;
+    }
+}
+
+// .client__item {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.17;
+//     text-align: center;
+//     margin-bottom: 50px;
+// }
+
+// .client__links {
+//     display: flex;
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//     gap: 30px;
+// }
+
+// .client__link {
+//     display: flex;
+//     padding: 0;
+//     border: none;
+//     width: 170px;
+//     height: 92px;
+//     justify-content: center;
+//     align-items: center;
+//     color: #AFB1B8;
+//     cursor: pointer;
+//     border: 1px solid #AFB1B8;
+//     border-radius: 4px;
+//     transition-property: color, border;
+//     transition-duration: 250ms;
+//     transition-timing-function: $timing-function;
+
+//     &:hover,
+//     &:focus {
+//         color: $color-accent;
+//         border: 1px solid $color-accent;
+//     }
+// }
+
+// .client__icon {
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+//     border: none;
+//     fill: currentColor;
+//     width: 106px;
+//     height: 60px;
+// }

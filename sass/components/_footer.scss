@@ -1,0 +1,76 @@
+// ПІДВАЛ СТОРІНКИ
+
+
+
+// Мобільна версія 480px
+.footer {
+    background-color: $color-bgr-footer;
+
+}
+.footer__main{
+    text-align: center;
+    padding: 60px 0;
+}
+
+
+.footer__address {
+    text-align: center;
+    color: $color-white;
+    margin-top: 20px;   
+}
+
+.footer__street {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 9px;
+}
+
+.footer__link {
+    color: $color-text-address;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+
+.footer__mailto {
+    margin-bottom: 9px;
+}
+
+
+
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+.footer-container {
+    display: flex;
+    padding: 0;
+}
+.footer__item {
+    margin-left: 61px;
+    margin-right: auto;
+}
+}
+
+
+
+
+
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
+.footer__main {
+    display: flex;
+}
+.footer__item {
+    width: 231px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+.footer__address {
+    text-align: left;
+
+}
+}
+
+

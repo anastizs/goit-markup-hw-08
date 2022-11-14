@@ -1,0 +1,119 @@
+// ОСОБЛИВОСТІ
+
+// Мобільна версія 480px
+
+.feature__item{
+    max-width: 450px;
+}
+.feature__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    background-color: $color-bgr-light;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+}
+
+.feature__svg {
+    width: 70px;
+    height: 70px;
+}
+
+.feature__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feature__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $color-secondary; 
+}
+.feature__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+
+.feature{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.feature__item {
+    width: 354px;
+}
+
+
+.feature__title {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.14;
+}
+
+.feature__text {
+    font-size: 14px;
+    line-height: 1.7;
+}
+}
+
+
+
+
+
+
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
+.feature__item {
+    width: 270px;
+}
+.feature__title {
+    font-size: 14px;
+}
+}
+// .feature {
+//     display: inline-flex;
+//     gap: $gap-card-set;
+// }
+
+// .feature__icon {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 120px;
+//     width: 270px;
+//     background-color: $color-bgr-light;
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+//     background-repeat: no-repeat;
+// }
+
+// .feature__svg {
+//     width: 70px;
+//     height: 70px;
+// }
+
+// .feature__title {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.2;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     margin-bottom: 10px;
+// }
+
+// .feature__text {
+//     font-size: 14px;
+//     line-height: 1.71;
+
+//     color: $color-secondary;
+// }

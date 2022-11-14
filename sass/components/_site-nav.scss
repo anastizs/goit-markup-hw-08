@@ -1,0 +1,82 @@
+// НАВІГАЦІЯ ПО САЙТУ
+
+.site-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+}
+
+.site-nav__item {
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+}
+
+.site-nav__link {
+    display: flex;
+    align-items: center;
+    color: $color-primary;
+    transition: color 250ms $timing-function;
+    text-decoration: none;
+
+    &:hover,
+    &:focus{
+        color: $color-accent;
+    }
+}
+
+.current {
+    color: $color-accent;
+}
+@media screen and (max-width: 767px) {
+.site-nav {
+   margin-top: 48px;
+   margin-bottom: 302px;
+    
+}
+
+}
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+.site-nav {
+    display: flex;
+    flex-direction: row;
+    
+    gap: 50px;
+    margin-left: 87px;
+    margin-right: 96px;
+}
+.site-nav__item {
+    font-size: 14px;
+    padding: 32px 0;
+}
+.site-nav__item--line {
+    position: relative;
+    display: block;
+    text-decoration: none;
+
+    &::after{
+        content:" ";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: 0;
+        background-color: $color-accent;
+        border-radius: 2px;
+    }
+}
+}
+// Планшетна версія 1200px
+@media screen and (min-width: 1200px) {
+    .site-nav {
+        margin-left: 92px;
+        margin-right: 315px;
+    }
+
+}

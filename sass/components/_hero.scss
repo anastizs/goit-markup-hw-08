@@ -1,0 +1,130 @@
+// ЦЕНТРАЛЬНА СТОРІНКА - ГЕРОЙ
+
+// Мобільна версія 480px
+
+.hero-container {
+    background-color: $color-bgr-footer;
+}
+
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: $color-white;
+}
+
+.hero__btn {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    border: none;
+    cursor: pointer;
+
+    background: $color-accent;
+    color: $color-white;
+
+    padding: 10px 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:active {
+        background: #188CE8;
+    }
+}
+
+
+// Планшетна версія 768px
+@media screen and (min-width: 768px){}
+    
+
+
+
+
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+    
+.hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+}
+.hero__btn {
+    padding: 10px 32px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .hero-container {
+//     background-color: $color-bgr-footer;
+//     color: $color-white;
+//     text-align: center;
+
+// }
+
+// .hero {
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+// }
+
+// .hero__title {
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     margin-bottom: 30px;
+// }
+
+// .hero__btn {
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     letter-spacing: 0.06em;
+//     border-radius: 4px;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+//     border: none;
+//     cursor: pointer;
+
+//     background: $color-accent;
+//     color: $color-white;
+
+//     padding: 10px 32px;
+
+//     &:active{
+//         background: #188CE8;
+//     }
+// }
