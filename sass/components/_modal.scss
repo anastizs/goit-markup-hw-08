@@ -3,7 +3,7 @@
 
 // Мобільна версія 480px
 .backdrop {
-    z-index: 9;
+    z-index: 11;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +33,7 @@
     transition: transform 250ms $timing-function;
     padding: 40px;
 
-    width: 450px;
+    max-width: 450px;
 
     border-radius: 4px;
     box-shadow: $shadow-cart;
@@ -82,7 +82,7 @@
 }
 
 .form {
-    width: 370px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -228,6 +228,7 @@
 
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
+    
 
 }
 
@@ -238,10 +239,10 @@
 // Десктоптна версія 1200px
 @media screen and (min-width: 1200px) {
 .modal {
-    width: 528px;
+    max-width: 528px;
 }
 .form {
-    width: 448px;
+    width: 100%;
 }
 .policy__label {
     font-size: 14px;
