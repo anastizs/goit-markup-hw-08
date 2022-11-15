@@ -33,8 +33,9 @@
     transition: transform 250ms $timing-function;
     padding: 40px;
 
-    max-width: 450px;
-
+    width: 450px;
+    
+    
     border-radius: 4px;
     box-shadow: $shadow-cart;
     background-color: $color-white;
@@ -227,8 +228,10 @@
 
 
 // Планшетна версія 768px
-@media screen and (min-width: 768px) {
-    
+@media screen and (max-width: 480px) {
+.modal {
+    width: 100%;
+}
 
 }
 
@@ -239,7 +242,7 @@
 // Десктоптна версія 1200px
 @media screen and (min-width: 1200px) {
 .modal {
-    max-width: 528px;
+    width: 528px;
 }
 .form {
     width: 100%;

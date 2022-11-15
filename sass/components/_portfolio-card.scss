@@ -12,21 +12,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    // margin-top: -30px;
-    // margin-left: -30px;
     
-}
-
-.card-set__item {
-    
-    // flex-basis: calc(100% / 3 - 30px);
-    // margin-left: 30px;
-    // margin-top: 30px;
 }
 
 .prodact {
     background: $color-white;
-    width: 450px;
+    max-width: 450px;
     cursor: pointer;
     transition: box-shadow 250ms $timing-function;
 
@@ -56,8 +47,6 @@
         content: "";
         width: 100%;
         height: 100%;
-        // top: 0;
-        // left: 0;
         background-color: rgba(33, 150, 243, 0.9);
         transform: translateY(100%);
         transition: transform 250ms $timing-function;
@@ -71,6 +60,8 @@
 .prodact__text {
     display: inline-block;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     font-size: 18px;
@@ -79,7 +70,7 @@
     color: $color-white;
     top: 0;
     left: 0;
-    padding: 63px 24px;
+    padding:5px 24px;
     transform: translateY(100%);
     transition: transform 250ms $timing-function;
 }
@@ -108,20 +99,29 @@
     color: $color-secondary;
     cursor: pointer;
 }
-
+@media screen and (min-width: 480px) {
+.prodact__text {
+    padding: 77px 24px;
+}
+}
 
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
 .prodact {
     width: 354px;
 }
+.prodact__text {
+    padding: 49px 24px;
 }
-
+}
 
 // Десктоптна версія 1200px
 @media screen and (min-width: 1200px) {
 .prodact {
     width: 370px;
+}
+.prodact__text {
+    padding: 63px 24px;
 }
 }
 

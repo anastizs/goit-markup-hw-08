@@ -19,7 +19,6 @@
     border: none;
     background-color: transparent;
 
-    
     & .icon-close{
     display: none;
     }
@@ -31,6 +30,12 @@
     &.is-open .icon-menu {
     display:none;
     }
+    
+    &.is-open .icon-close:hover,
+    &.is-open .icon-close:focus {
+    fill: $color-accent;
+     }
+   
 }
 
 .menu-container{

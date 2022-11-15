@@ -27,6 +27,21 @@
     fill: currentColor;
     margin-right: 10px;
 }
+@media screen and (max-width: 767px) {
+.contact-nav {
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+.contact-nav__link{
+    font-size: 24px;
+}
+.contact-nav__link--tel{
+    color: $color-accent;
+    font-size: 34px;
+    padding-bottom: 32px;
+}
+}
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
 
