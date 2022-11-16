@@ -1,7 +1,7 @@
 .social-nav{
     display: flex;
     flex-direction: row;
-    margin-top: 64px;
+    margin-top: auto;
     margin-bottom: 48px;
  }
 .social-nav__item{
@@ -31,6 +31,11 @@
     align-items: center;
     color: $color-accent;
     text-decoration: none;
+}
+@media screen and (max-width: 479px) {
+    .social-nav__item {
+        font-size: 12px;
+    }
 }
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {

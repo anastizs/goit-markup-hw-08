@@ -26,7 +26,7 @@
     text-align: center;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -52,22 +52,13 @@
 .feature__item {
     width: 354px;
 }
-
-
+.feature__item:not(:last-child) {
+    margin-bottom: 0px;
+}
 .feature__title {
-    text-align: left;
-    font-size: 16px;
-    line-height: 1.14;
-}
-
-.feature__text {
-    font-size: 14px;
-    line-height: 1.7;
+    text-align: start;
 }
 }
-
-
-
 
 
 
@@ -76,7 +67,5 @@
 .feature__item {
     width: 270px;
 }
-.feature__title {
-    font-size: 14px;
-}
+
 }

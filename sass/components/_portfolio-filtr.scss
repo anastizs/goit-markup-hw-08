@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .filter-set__btn {
@@ -47,12 +47,16 @@
 .filter-set {
     width: 100%;
     justify-content: center;
+    margin-bottom: 30px;
 }
+
 
 }
 
 
 // Десктоптна версія 1200px
 @media screen and (min-width: 1200px) {
-
+.filter-set {
+    margin-bottom: 34px;
+    }
 }

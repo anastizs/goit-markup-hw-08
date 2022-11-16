@@ -26,9 +26,9 @@
 .team__list{
     width: 450px;
 }
-.team__list:not(:last-child) {
-    margin-bottom: 30px;
-}
+// .team__list:not(:last-child) {
+//     margin-bottom: 30px;
+// }
 
 .team__card {
     background: $color-white;
@@ -41,7 +41,8 @@
 }
 .team__content {
     text-align: center;
-    padding: 30px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .team__title {
@@ -104,6 +105,11 @@
 
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
+.team__content {
+    padding-top: 30px;
+}
+
+
 .team__heading {
     font-size: 28px;
 }
@@ -124,6 +130,7 @@
 @media screen and (min-width: 1200px) {
     .team__heading {
         font-size: 36px;
+        margin-bottom: 50px;
     }
 
     .team__img {
@@ -132,5 +139,9 @@
 
     .team__list {
         width: 270px;
+    }
+    .team__content {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }

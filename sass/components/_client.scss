@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     gap: 30px;
+    
 }
 
 .client__link {
@@ -71,5 +72,13 @@
     .client__link {
         width: 170px;
     }
+    .client__item {
+        margin-bottom: 50px;
+    }
+.client__item {
+    font-size: 36px;
+    line-height: 1.17;
+    
+}
 }
 

@@ -76,7 +76,6 @@
 }
 
 .prodact__content {
-    height: 146px;
     padding: 20px 24px;
     padding-bottom: auto;
     border: 1px solid $color-bgr-cards;
@@ -108,7 +107,13 @@
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
 .prodact {
+    display: flex;
+    flex-direction: column;
     width: 354px;
+    height: 100%;
+}
+.prodact__content {
+    flex-grow: 1;
 }
 .prodact__text {
     padding: 49px 24px;
@@ -120,6 +125,7 @@
 .prodact {
     width: 370px;
 }
+
 .prodact__text {
     padding: 63px 24px;
 }
